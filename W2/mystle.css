@@ -1,0 +1,131 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-color: black;
+}
+.navbar{
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath opacity='1' stroke='rgb(135, 206, 235)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+.navbar-brand:hover {
+    font-weight: 800;
+    color: skyblue;
+    font-family: "Syne", sans-serif;
+}
+
+.navbar-brand {
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    color: skyblue;
+}
+
+li.nav-item>a {
+    color: lightgray;
+}
+
+li.nav-item>a:hover {
+    color: skyblue;
+}
+
+h1{
+    font-family: "Syne", sans-serif;
+    color: skyblue;
+    font-weight: 800;
+}
+h2{
+    font-family: "Syne", sans-serif;
+    font-size: 15pt;
+    color: skyblue;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.custom-col {
+    padding: 10px;
+}
+.info-album {
+    font-size: 12pt;
+    line-height: 9pt;
+}
+.custom-list{
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.album-lenght {
+    border: 1px solid skyblue;
+    max-width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 9pt;
+}
+.custom-card {
+    background-color: rgba(255, 255, 255, 0.205);
+    color: white;
+    height: 100%;
+}
+
+.custom-card-title {
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.custom-card-text {
+    font-size: 10pt;
+}
+
+hr {
+    border: 0.5px solid skyblue;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.custom-card-footer {
+    font-size: 9pt;
+}
+
+
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+}
+
+.list-group-item {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.swiper {
+    width: 800px;
+    height: 250px;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    color: skyblue;
+}
+.custom-footer{
+    margin-top: 50px;
+    padding-top: 15px;
+    border-top: 1px solid skyblue;
+    color: lightgray;
+    font-size: 9pt;
+}
+
+.colored-text{
+    color: skyblue;
+}
