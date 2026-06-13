@@ -11,41 +11,386 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top">
-                    Beyond the Map
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Weekly Offers</a>
-                        <a class="nav-link" href="#">Welcome Summer</a>
-                        <a class="nav-link "href="#">Deal of the day</a>
-                        <a class="nav-link "href="#">Last minute</a>
-                        <a class="nav-link "href="#">Testimonial</a>
-                        <form class="d-flex" role="search">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100%;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#weekly-offers">Weekly Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#last-minute">Last Minute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deal-of-the-day">Deal of the day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feedback">Feedback</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="jumbotron">
+            <div class="container">
+                <div class="custom-jumbo jumbotron jumbotron-fluid mt-5 p-5">
+                    <h1 class="title-name strong">Beyond Borders</h1>
+                    <p class="lead">Explore out of the Box</p>
+                    <hr class="my-4">
+                    <p class="lead">Discover the offers</p>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Book now</a>
+                </div>
+            </div>
+        </section>
+        <section id="weekly-offers">
+            <div class="container mt-5 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="text-center">Weekly Offers</h2>
+                    <a class="custom-button btn btn-outline-dark" href="#" type="button">Show</a>
+                </div>
+
+                <div class="collapsible-section d-none row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./assets/fist-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content. This content is a little bit longer.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./assets/sec-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content. This content is a little bit longer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./assets/thr-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./assets/four-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content. This content is a little bit longer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="welcome-summer">
+            <div class="container mt-5 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="text-center">Welcome Summer</h2>
+                    <a class="custom-button btn btn-outline-dark" href="#" type="button">Show</a>
+                </div>
+
+                <div class="collapsible-section d-none row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/fist-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/sec-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/thr-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/four-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/thr-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <div class="card">
+                            <img src="./assets/four-card.jpg" class="card-img-top" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
+        </section>
+        <section id="last-minute">
+            <div class="container mt-5 d-flex flex-column">
+                <div class="mb-4">
+                    <h2 class="text-center">Last Minute</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/fist-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit:cover;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/sec-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/thr-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/four-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/thr-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <img src="./assets/four-card.jpg" class="card-img" alt="..."
+                                style="height: 150px;object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+        </section>
+        <section id="deal-of-the-day">
+            <div class="container  my-5 d-none d-sm-block">
+                <div class="mb-4">
+                    <h2 class="text-center">Deal of the Day</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img src="./assets/thr-card.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Piha Beach:
+                            <br>Pure, Untamed New Zealand
+                        </h4>
+                        <p class="my-1">Where volcanic black sand meets the roaring Tasman Sea.</p>
+                        <button class="btn-outline-dark btn btn-sm mb-1">Best offer</button>
+                        <p>15.01.2027 — 31.01.2027</p>
+                        <hr>
+                        <p>Guarded by the majestic Lion Rock, Piha Beach is a legendary paradise for surfers, nature
+                            lovers, and adventurers alike.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="feedback">
+            <div class="container my-5">
+                <div class="mb-4">
+                    <h2 class="text-center">Feedback</h2>
+                </div>
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-1" style="width: max-content;">
+                                <img src="./assets/profile-img.jpeg" class="img-fluid rounded-start" alt="..."
+                                    style="width: 80px; height: auto;">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">First User</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-1" style="width: max-content;">
+                                <img src="./assets/profile-img.jpeg" class="img-fluid rounded-start" alt="..."
+                                    style="width: 80px; height: auto;">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Second User</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-1" style="width: max-content;">
+                                <img src="./assets/profile-img.jpeg" class="img-fluid rounded-start" alt="..."
+                                    style="width: 80px; height: auto;">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Third User</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="mt-auto bg-body-tertiary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique
+                        convallis.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class=" list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Services</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2026 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -53,9 +398,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
