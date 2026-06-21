@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+
+<body class="bg-black">
+    <nav id="navbar" class="navbar navbar-expand-lg px-2 py-3 navbar-dark bg-black ">
+        <div id="container-Navbar"
+            class="container-fluid d-flex align-items-center justify-content-between position-relative">
+            <a href="./index.html" id="navbar-Brand-img" style="width: 100px;">
+                <img class=" img-fluid" src="./assets/imgs/Netflix_Logo_RGB.png" alt="Netflix logo"></a>
+            <div class="collapse navbar-collapse order-3 order-lg-2 ms-2" id="navbarNavAltMarkup">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white opacity-75" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white opacity-75" href="#">Tv Shows</a></li>
+                    <li class="nav-item"><a class="nav-link text-white opacity-75" href="#">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link text-white opacity-75" href="#">Recently Added</a></li>
+                    <li class="nav-item"><a class="nav-link text-white opacity-75" href="#">My List</a></li>
+                </ul>
+            </div>
+
+            <div id="container-Navbar-right" class="d-flex align-items-center order-2 order-lg-3">
+                <div id="container-Icons" class="d-flex align-items-center justify-content-between gap-0">
+                    <div id="btn-Search">
+                        <form class="d-flex" role="search">
+                            <!-- qui vorrei aggiungere una transizione da destra a sinistra per mostrare la barra di ricercca al click del bottone -->
+                            <input class="form-control me-2 d-none" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button type="button" id="show-Search" class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div id="btn-Kids">
+                        <a href="#" class="nav-link text-white fw-bold">KIDS</a>
+                    </div>
+                    <div id="btn-Notification">
+                        <button class="btn d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="container-Profile-img" class="dropdown" style="width: 45px;">
+                        <button class="dropdown-toggle ps-0 text-white btn" href="#" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/imgs/netflix-profile-pictures.jpg" alt="profile image" class="img-fluid">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end border-Btn bg-black" data-bs-theme="dark"
+                            id="collapsible-Settings-List">
+                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <li><a class="dropdown-item pb-2" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item pt-2" href="#">Change Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span id="hamburgerNav-icon" class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <section id="tvShows-Page">
+            <div class="container-fluid">
+                <div class="row d-flex">
+                    <div class="col-4 d-flex align-items-center">
+                        <div class="row d-flex flex-nowrap align-items-center">
+                            <div class="col-7 col-md-8 col-lg-9">
+                                <h1 class="text-nowrap text-white h3 fw-semibold my-0 ms-4">TV Shows</h1>
+                            </div>
+                            <div class="col-5 col-md-4 col-lg-3">
+                                <div class="dropdown">
+                                    <button class="border-Btn btn dropdown-toggle text-white" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Genres
+                                    </button>
+                                    <ul class="dropdown-menu border-Btn dropdown-menu-dark bg-black">
+                                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                                        <li><a class="dropdown-item" href="#">Crime</a></li>
+                                        <li><a class="dropdown-item" href="#">Documentary</a></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 text-white d-flex justify-content-end align-items-center">
+                        <div class="row me-4">
+                            <button class="col btn btn-dark p-0 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="img-fluid bi bi-list border-Svg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </button>
+                            <button class="col btn btn-dark p-0 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-grid-fill border-Svg padding-Svg-grid" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

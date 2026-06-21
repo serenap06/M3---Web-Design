@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(245, 244, 248);
+}
+
+.custom-a-list {
+    font-weight: 600;
+    font-size: 11pt;
+    color: black;
+}
+
+.hero {
+    background-color: #754ffe;
+    overflow: hidden;
+
+}
+
+.custom-title-hero {
+    color: white;
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.custom-text-hero {
+    font-size: 15pt;
+    color: white;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+
+.teal-btn {
+    background-color: #20c997;
+    color: white;
+}
+
+.size-btn {
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+.custom-circle {
+    background-color: #ffeeda;
+    color: #c28135;
+    flex-shrink: 0;
+}
+
+.custom-titles-section1 {
+    font-weight: 600;
+}
+
+.custom-p-section1 {
+    font-size: 11pt;
+}
+
+.custom-card-body {
+    margin-bottom: -20px;
+}
+
+.custom-card-title {
+    font-size: 13pt;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.custom-stars-card {
+    color: orange;
+    font-size: 9pt;
+}
+.text-black{
+    color: black;
+}
+.text-gray{
+color: rgb(92, 87, 118);
+}
+.numb-stars{
+font-size: 11pt;
+}
+.text-line-through{
+    text-decoration: line-through;
+}
+.text-size-small{
+    font-size: 11pt;
+
+}
+.font-weight-price{
+    font-weight: 600;
+}
+.img-profile-round{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
