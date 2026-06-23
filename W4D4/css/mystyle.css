@@ -1,15 +1,149 @@
+body {
+    color: white;
+    background-color: #141414 !important;
+}
+
 #hamburgerNav-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-btn-view {
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
 .border-Btn {
     border-color: rgba(255, 255, 255, 0.407);
 }
-.border-Svg{
+
+.genres-btn{
+    border-radius: 3px;
+    height: 30px;
+    width: 110px;
+    font-size: 15px;
+}
+.custom-dropdown{
+    height: fit-content;
+}
+
+.border-Svg {
     border: 1px solid white;
 }
 
-.padding-Svg-grid{
-    box-sizing: content-box;
-    padding: 1px;
+.no-border-Btn,
+.no-border-Btn:hover,
+.no-border-Btn:focus,
+.no-border-Btn:active,
+.no-border-Btn:focus-visible {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.movies-container{
+    margin-top: -15px;
+    margin-left: -10px;
+}
+.title-container{
+    margin-left: 3px;
+    margin-bottom: -10px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+.netflix-swiper {
+    scroll-behavior: smooth;
+    overflow-y: visible;
+    scrollbar-width: none;
+    padding: 20px 0;
+}
+
+.netflix-swiper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.movie-card {
+    width: 100%;
+    aspect-ratio: 16/9;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding: 1.5px;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.custom-swiper-btn {
+
+    border: none;
+    border-radius: 0px;
+    z-index: 20;
+    width: 4%;
+    height: 130px;
+    min-width: 40px;
+    background-color: rgba(20, 20, 20, 0.5);
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition:
+        opacity 0.3s ease background 0.5s ease;
+}
+
+.custom-btn-swipe-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-left {
+    margin-left: -20px;
+}
+
+.btn-right {
+    margin-right: -10px;
+}
+
+.netflix-swiper:hover .custom-swiper-btn {
+    opacity: 1;
+    background-color: rgba(20, 20, 20, 0.5);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.custom-swiper-btn:hover,
+.custom-swiper-btn::after {
+    max-width: 980px;
+    opacity: 1;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.custom-copyright{
+    font-size: 9pt;
+    opacity: .7;
+}
+
+.footer-text{
+    font-size: 10pt;
+    opacity: .7;
+    margin-top: 50px;
+
+}
+.custom-btn-footer, .custom-btn-footer:checked, .custom-btn-footer:active, .custom-btn-footer:focus-visible{
+    color: white;
+    outline:none;
+    border: none;
+}
+
+footer a{
+        text-decoration: none;
 }

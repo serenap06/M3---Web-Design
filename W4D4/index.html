@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-black">
-    <nav id="navbar" class="navbar navbar-expand-lg px-2 py-3 navbar-dark bg-black ">
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg px-2 py-3 navbar-dark ">
         <div id="container-Navbar"
             class="container-fluid d-flex align-items-center justify-content-between position-relative">
             <a href="./index.html" id="navbar-Brand-img" style="width: 100px;">
@@ -29,11 +30,11 @@
             <div id="container-Navbar-right" class="d-flex align-items-center order-2 order-lg-3">
                 <div id="container-Icons" class="d-flex align-items-center justify-content-between gap-0">
                     <div id="btn-Search">
-                        <form class="d-flex" role="search">
+                        <form class="d-flex " role="search">
                             <!-- qui vorrei aggiungere una transizione da destra a sinistra per mostrare la barra di ricercca al click del bottone -->
                             <input class="form-control me-2 d-none" type="search" placeholder="Search"
                                 aria-label="Search">
-                            <button type="button" id="show-Search" class="btn">
+                            <button type="button" id="show-Search" class="btn no-border-Btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
                                     class="bi bi-search" viewBox="0 0 16 16">
                                     <path
@@ -43,10 +44,11 @@
                         </form>
                     </div>
                     <div id="btn-Kids">
-                        <a href="#" class="nav-link text-white fw-bold">KIDS</a>
+                        <button class="btn no-border-Btn"><a href="#"
+                                class="nav-link text-white fw-bold">KIDS</a></button>
                     </div>
                     <div id="btn-Notification">
-                        <button class="btn d-flex">
+                        <button class="btn d-flex no-border-Btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
                                 class="bi bi-bell-fill" viewBox="0 0 16 16">
                                 <path
@@ -55,11 +57,11 @@
                         </button>
                     </div>
                     <div id="container-Profile-img" class="dropdown" style="width: 45px;">
-                        <button class="dropdown-toggle ps-0 text-white btn" href="#" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button class="dropdown-toggle ps-0 text-white btn no-border-Btn" href="#" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./assets/imgs/netflix-profile-pictures.jpg" alt="profile image" class="img-fluid">
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end border-Btn bg-black" data-bs-theme="dark"
+                        <ul class="dropdown-menu dropdown-menu-end border-Btn " data-bs-theme="dark"
                             id="collapsible-Settings-List">
                             <li><a class="dropdown-item" href="#">Account</a></li>
                             <li><a class="dropdown-item pb-2" href="#">Settings</a></li>
@@ -79,8 +81,9 @@
         </div>
     </nav>
 
-    <header>
-        <section id="tvShows-Page">
+    <main>
+
+        <section class="tvShows-Page">
             <div class="container-fluid">
                 <div class="row d-flex">
                     <div class="col-4 d-flex align-items-center">
@@ -90,15 +93,16 @@
                             </div>
                             <div class="col-5 col-md-4 col-lg-3">
                                 <div class="dropdown">
-                                    <button class="border-Btn btn dropdown-toggle text-white" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button
+                                        class="genres-btn border-Btn btn dropdown-toggle text-white d-flex align-items-center justify-content-between"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Genres
                                     </button>
-                                    <ul class="dropdown-menu border-Btn dropdown-menu-dark bg-black">
+                                    <ul class="custom-dropdown dropdown-menu border-Btn dropdown-menu-dark bg-dark">
                                         <li><a class="dropdown-item" href="#">Drama</a></li>
                                         <li><a class="dropdown-item" href="#">Crime</a></li>
                                         <li><a class="dropdown-item" href="#">Documentary</a></li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a class="dropdown-item" href="#">Kids</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -106,16 +110,16 @@
                     </div>
                     <div class="col-8 text-white d-flex justify-content-end align-items-center">
                         <div class="row me-4">
-                            <button class="col btn btn-dark p-0 text-white">
+                            <button class="col btn btn-dark p-0 text-white custom-btn-view">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="img-fluid bi bi-list border-Svg" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                                 </svg>
                             </button>
-                            <button class="col btn btn-dark p-0 text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-grid-fill border-Svg padding-Svg-grid" viewBox="0 0 16 16">
+                            <button class="col btn btn-dark p-0 text-white custom-btn-view">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-grid-fill border-Svg" viewBox="0 0 16 16">
                                     <path
                                         d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
                                 </svg>
@@ -125,13 +129,476 @@
                 </div>
             </div>
         </section>
-    </header>
 
-    <section></section>
-    <section></section>
-    <section></section>
+        <section class="genre-container">
+            <div
+                class="movies-container container-fluid px-5 d-flex align-items-start flex-column justify-content-between">
+                <h3 class="title-container row mt-4">Trending now</h3>
+                <div class="position-relative ">
+                    <button
+                        class="scroller-btn btn btn-left custom-swiper-btn position-absolute start-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </button>
+                    <button
+                        class="scroller-btn btn btn-right custom-swiper-btn position-absolute end-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
 
-    <footer></footer>
+                    <div
+                        class="netflix-swiper row-col d-flex flex-nowrap align-items-center overflow-x-auto style-scrollbar">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/1.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/2.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/3.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/4.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/5.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/6.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/7.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/8.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/9.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/10.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/11.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/12.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/13.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/14.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/15.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/16.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/17.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/18.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="genre-container">
+            <div
+                class="movies-container container-fluid px-5 d-flex align-items-start flex-column justify-content-between">
+                <h3 class="title-container row mt-4">Watch It Again</h3>
+                <div class="position-relative">
+                    <button
+                        class="scroller-btn btn btn-left custom-swiper-btn position-absolute start-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </button>
+                    <button
+                        class="scroller-btn btn btn-right custom-swiper-btn position-absolute end-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
+
+                    <div
+                        class="netflix-swiper row-col d-flex flex-nowrap align-items-center overflow-x-auto style-scrollbar">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/18.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/17.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/16.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/15.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/14.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/13.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/12.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/11.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/10.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/9.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/8.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/7.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/6.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/5.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/4.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/3.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/2.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/1.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="genre-container">
+            <div
+                class="movies-container container-fluid px-5 d-flex align-items-start flex-column justify-content-between">
+                <h3 class="title-container row mt-4">New Releases</h3>
+                <div class="position-relative">
+                    <button
+                        class="scroller-btn btn btn-left custom-swiper-btn position-absolute start-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </button>
+                    <button
+                        class="scroller-btn btn btn-right custom-swiper-btn position-absolute end-0 top-50 translate-middle-y z-3"
+                        aria-label="swipe right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right custom-btn-swipe-svg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
+
+                    <div
+                        class="netflix-swiper row-col d-flex flex-nowrap align-items-center overflow-x-auto style-scrollbar">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/9.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/8.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/7.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/6.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/5.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/4.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/3.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/2.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/1.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/10.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/11.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/12.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/13.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/14.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/15.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/16.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/17.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 flex-shrink 0">
+                            <div class="movie-card position-relative">
+                                <img src="./assets/imgs/movies/18.png" alt="movie cover" class="img-fluid w-100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="text-muted mx-5 mt-5 px-5 py-5">
+        <div class="footer-text container text-white">
+            <div id="social-Icons" class=" text-start">
+                <button type="button" class="btn custom-btn-footer ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                        </path>
+                    </svg>
+                </button>
+                <button type="button" class="btn custom-btn-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </button>
+                <button type="button" class="btn custom-btn-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn custom-btn-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                </button>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-4 flex-shrink 0">
+                    <div class="">
+                        <p>
+                            <a href="#!" class="text-reset">Audio and Subtitles</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Media Center</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-4 flex-shrink 0">
+                    <p>
+                        <a href="#!" class="text-reset">Audio Description</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Investor Relations</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Legal Notices</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-4 flex-shrink 0">
+
+                    <p>
+                        <a href="#!" class="text-reset">Help Center</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Jobs</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Cookie Preferences</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4 flex-shrink 0">
+                    <p>
+                        <a href="#!" class="text-reset">Gif Cards</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Terms of Use</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Corporate Information</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-copyright p-4 text-start text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 1997-2026 Netflix, Inc.
+        </div>
+
+    </footer>
 
 
 
@@ -160,6 +627,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
 
 </body>
 
